@@ -44,6 +44,10 @@ public class GoodSolution {
         catch (DomainExceptions e){
             System.out.println("Error in reservation: " + e.getMessage());
         }
+        catch (RuntimeException e){
+            System.out.println("Unexpected error.");
+        }
+
 
 
 
